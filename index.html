@@ -1,0 +1,39 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="family.png" id="image">
+<h2 id="name">family</h2>
+<button id="changer" onclick="change()">Next</button>
+</body>
+<script>
+
+var image = [
+"Father.png",
+"https://www.kindpng.com/picc/m/120-1203344_cartoon-mother-clipart-hd-png-download.png",
+"https://webstockreview.net/images/brother-clipart-clip-art-4.jpg",
+"https://thumbs.dreamstime.com/b/sister-portrait-pretty-teenage-girl-schoolgirl-long-brown-hair-satchel-bag-school-uniform-skirt-blouse-daughter-86364433.jpg",
+];
+var relatives = [
+"Amit Bhardwaj",
+"Pratibha Sharma",
+"Harshvardhan Bhardwaj",
+"Prisha Bhardwaj"
+];
+var i=0;
+function change(){
+var number=3;
+if(i>number){
+i=0;
+}
+var updatedImage=image[i];
+var updatedName=relatives[i];
+document.getElementById("name").innerHTML=updatedName;
+
+document.getElementById("image").src=updatedImage;
+
+i++;
+}
+</script>
+</html>
